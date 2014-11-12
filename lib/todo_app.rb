@@ -31,7 +31,7 @@ class TodoApp < CommandLineApp
     puts "Please enter the new project name:\n"
     new_key = gets.chomp
     @projects[new_key] = []
-    @projects[new_key] == @projects[old_key]
+    @projects[new_key] = @projects[old_key]
     @projects.delete(old_key)
 
   end
